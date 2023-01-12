@@ -21,6 +21,7 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
+    padding: 0 1rem;
 }
 
 .main__advice {
@@ -30,9 +31,25 @@ body {
 
 .advice__id {
     color: $neon-green;
+    font-size: 1.3rem;
+    letter-spacing: .346rem;
 }
 
 .advice__text {
     color: $light-cyan;
     font-size: 2.8rem;
+}
+
+.advice__button {
+    background-color: $neon-green;
+    border: none;
+    border-radius: 100%;
+    display: flex;
+    padding: 1.5rem;
+    margin: auto;
+
+    &:hover {
+        cursor: pointer;
+        box-shadow: 0 0 1.5rem .5rem $neon-green;
+    }
 }
