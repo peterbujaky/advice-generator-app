@@ -14,7 +14,7 @@ document.getElementById("button").addEventListener("click", () => {
         let advice = data.slip.advice;
         let id = data.slip.id;
         document.getElementById("adviceText").innerHTML = `"${advice}"`;
-        document.getElementById("adviceID").innerHTML = `Advice #${id}`;
+        document.getElementById("adviceID").innerHTML = `ADVICE #${id}`;
     })
 })
 
