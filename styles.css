@@ -21,6 +21,7 @@ body {
 .main__advicediv {
   background-color: hsl(217deg, 19%, 24%);
   border-radius: 1rem;
+  max-width: 55rem;
   padding: 4rem 2.4rem 0 2.4rem;
   position: relative;
   text-align: center;
@@ -62,8 +63,36 @@ body {
   cursor: pointer;
   box-shadow: 0 0 4rem 0 hsl(150deg, 100%, 66%);
 }
+.advice__button::after {
+  content: "";
+  display: flex;
+  position: absolute;
+  border-radius: 100%;
+  bottom: 0;
+  height: 100%;
+  left: 50%;
+  width: 100%;
+  opacity: 0;
+  transform: translateX(-50%);
+  transition: all 0.5s;
+  box-shadow: 0 0 4rem 4rem hsl(150deg, 100%, 66%);
+}
 .advice__button:active {
-  box-shadow: 0 0 1rem 0.5rem hsl(150deg, 100%, 66%);
+  transform: translateY(52%) translateX(-50%);
+}
+.advice__button:active::after {
+  box-shadow: 0 0 0 0 hsl(150deg, 100%, 66%);
+  border-radius: 4em;
+  left: 50%;
+  bottom: 0;
+  opacity: 1;
+  transition: 0s;
+}
+
+@media (min-width: 1024px) {
+  .wrapper {
+    padding: 0 31.25% 0 31.25%;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */
