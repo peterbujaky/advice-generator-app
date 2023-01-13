@@ -4,7 +4,7 @@ fetch("https://api.adviceslip.com/advice")
     let advice = data.slip.advice;
     let id = data.slip.id;
     document.getElementById("adviceText").innerHTML = `"${advice}"`;
-    document.getElementById("adviceID").innerHTML = `Advice #${id}`;
+    document.getElementById("adviceID").innerHTML = `ADVICE #${id}`;
 })
 
 document.getElementById("button").addEventListener("click", () => {
