@@ -20,7 +20,7 @@ body {
 
 .main__advicediv {
   background-color: hsl(217deg, 19%, 24%);
-  border-radius: 1rem;
+  border-radius: 1.5rem;
   max-width: 55rem;
   padding: 4rem 2.4rem 0 2.4rem;
   position: relative;
