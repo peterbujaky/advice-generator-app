@@ -50,7 +50,7 @@ During this project I have learned how to use fetch API and convert the data int
 
 ### Continued development
 
-This was a good first project to get familiar albeit beint rather simple I will focus on completing similar but more complex projects.
+This was a good first project to get familiar with api calls albeit being rather simple I will focus on completing similar but more complex projects.
 
 ## Author
 - Frontend Mentor - [@peterbujaky](https://www.frontendmentor.io/profile/peterbujaky)
