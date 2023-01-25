@@ -1,4 +1,4 @@
-fetch("https://api.adviceslip.com/advice")
+fetch("https://api.adviceslip.com/advice", {cache: "no-cache"})
 .then(res => res.json())
 .then (data => {
     let advice = data.slip.advice;
@@ -8,7 +8,7 @@ fetch("https://api.adviceslip.com/advice")
 })
 
 document.getElementById("button").addEventListener("click", () => {
-    fetch("https://api.adviceslip.com/advice")
+    fetch("https://api.adviceslip.com/advice", {cache: "no-cache"})
     .then(res => res.json())
     .then(data => {
         let advice = data.slip.advice;
